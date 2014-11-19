@@ -1,0 +1,23 @@
+{
+    "name": "panugaling/laravel-paypal",
+    "description": "",
+    "authors": [
+        {
+            "name": "Jason Panugaling",
+            "email": "jmpanugaling@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~4",
+		"ext-curl": "*",
+		"ext-json": "*",
+		"paypal/rest-api-sdk-php" : "0.5.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Panugaling\\LaravelPaypal": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
