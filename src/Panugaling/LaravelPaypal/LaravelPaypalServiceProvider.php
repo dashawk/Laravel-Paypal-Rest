@@ -19,7 +19,9 @@ class LaravelPaypalServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		//
+		$this->app['Paypal'] = $this->app->share(function ($app) {
+			return new Paypal;
+		});
 	}
 
 	public function boot() {
